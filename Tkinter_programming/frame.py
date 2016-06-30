@@ -1,6 +1,5 @@
 This Python program is developed in order to open an internal camera and display the image within Tkinter window.
 
- 
 #importing modules required
 from ttk import *
 import Tkinter as tk
@@ -23,7 +22,6 @@ def show_vid():                                        #creating a function
     frame = cv2.flip(frame, 1)
     if flag is None:
         print "Major error!"
-        # <code to handle exception>
     elif flag:
         global last_frame
         last_frame = frame.copy()
